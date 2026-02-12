@@ -1,0 +1,12 @@
+com\hyperlocal\backend\controller\UserController.class
+com\hyperlocal\backend\model\User$Role.class
+com\hyperlocal\backend\model\User.class
+com\hyperlocal\backend\repository\ProviderRepository.class
+com\hyperlocal\backend\controller\ProviderController.class
+com\hyperlocal\backend\config\SecurityConfig.class
+com\hyperlocal\backend\model\Provider.class
+com\hyperlocal\backend\repository\BookingRepository.class
+com\hyperlocal\backend\repository\UserRepository.class
+com\hyperlocal\backend\BackendApplication.class
+com\hyperlocal\backend\controller\BookingController.class
+com\hyperlocal\backend\model\Booking.class
