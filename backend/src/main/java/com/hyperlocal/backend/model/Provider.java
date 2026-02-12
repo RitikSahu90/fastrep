@@ -14,8 +14,8 @@ public class Provider {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToOne
-    @JoinColumn(name = "user_id")
+    @OneToOne(optional = true)
+    @JoinColumn(name = "user_id", nullable = true)
     private User user;
 
     private String serviceType;
