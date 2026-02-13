@@ -17,6 +17,15 @@ public class UserController {
         this.userRepository = userRepository;
     }
 
+    @PostMapping("/login")
+    public User login(@RequestBody User loginDetails) {
+        return userRepository.findAll().stream()
+                .filter(u -> u.getEmail().equals(loginDetails.getEmail()) &&
+                        u.getPassword().equals(loginDetails.getPassword()))
+                .findFirst()
+                .orElseThrow(() -> new RuntimeException("Invalid email or password"));
+    }
+
     // Create user (no login, just save)
     @PostMapping
     public User createUser(@RequestBody User user) {
